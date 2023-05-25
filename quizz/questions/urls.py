@@ -1,7 +1,7 @@
 from django.urls import path, include
 
-from . import views
+from views import PostQuestions
 
 urlpatterns = [
-    path('api/v1/questions/<int:pk>/', views.get_question),
+    path("process_questions/", PostQuestions.as_view(), name="post_question"),
 ]
