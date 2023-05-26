@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 import requests
 from rest_framework.views import APIView
-from rest_framework.response import Response, 
+from rest_framework.response import Response
 
 from .models import Question_quiz
 from .serializers import QuestionSerializer
