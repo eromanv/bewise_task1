@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="questions_num">Number of Questions:</label>
+        <input type="number" name="questions_num" id="questions_num" required>
+        <br><br>
+        <input type="submit" value="Get Questions">
+    </form>
+    {% if data %}
+        <h2>API Result:</h2>
+        <p>{{ data }}</p>
+    {% endif %}
+</body>
+</html>
