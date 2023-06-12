@@ -49,3 +49,6 @@
 ## Технологии
 
 Django REST Framework, PostgreSQL, Docker
+
+## Автор
+Егоров Роман (@eromanvad)
