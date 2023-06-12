@@ -1,8 +1,7 @@
-from django.urls import path
-from . import views
-from .api import PostQuestions
+from django.urls import path, include
+
+from .views import PostQuestions
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('api/process_questions/', PostQuestions.as_view(), name='post_questions'),
+    path("process_questions/", PostQuestions.as_view(), name="post_question"),
 ]
