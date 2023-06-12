@@ -1,11 +1,10 @@
-from django.http import JsonResponse
-import requests
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
 import psycopg2
-from psycopg2 import Error
-import os
+import requests
+from django.http import JsonResponse
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from .models import Question_quiz
 from .serializers import QuestionSerializer
 
@@ -28,7 +27,7 @@ class PostQuestions(APIView):
             conn = psycopg2.connect(
                 user="postgres",
                 password="postgres",
-                host="localhost",
+                host="db",
                 port="5432",
                 database="postgres"
             )

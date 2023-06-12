@@ -28,5 +28,9 @@
             "username": "postgres",
             "name": "local_working"
         }
-    ]
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "none"
 }
