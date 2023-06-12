@@ -11,6 +11,7 @@
   `git clone https://github.com/eromanv/bewise_task1.git`
 
 3. Перейдите в каталоге infra:
+
     `cd infra`
 
 4. Создайте файл .env
