@@ -11,16 +11,16 @@
   `git clone https://github.com/eromanv/bewise_task1.git`
 
 3. Перейдите в каталоге infra:
-    cd infra
+    `cd infra`
 
 4. Создайте файл .env
 
-    DB_ENGINE=django.db.backends.postgresql
-    DB_NAME=postgres
-    POSTGRES_USER=postgres
-    POSTGRES_PASSWORD=postgres
-    DB_HOST=db
-    DB_PORT=5432
+        DB_ENGINE=django.db.backends.postgresql
+        DB_NAME=postgres
+        POSTGRES_USER=postgres
+        POSTGRES_PASSWORD=postgres
+        DB_HOST=db
+        DB_PORT=5432
 
 5. Запустите контейнеры Docker с помощью docker-compose:
 
